@@ -8,8 +8,9 @@
 #include <ArduinoJson.h>
 #include <ElegantOTA.h>
 #include <task_handler.h>
+#include "global.h"          // glob_temperature, glob_humidity, neo_enabled, ...
+#include "task_check_info.h" // Save_info_File()
 
-extern AsyncWebServer server;
 extern AsyncWebSocket ws;
 
 void Webserver_stop();
