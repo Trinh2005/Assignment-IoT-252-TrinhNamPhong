@@ -15,5 +15,6 @@
         "initializer_list": "cpp",
         "span": "cpp",
         "regex": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "E:/Study/HK252/IOT/LAB/LAB4/IOT_Assignment_BK/lib/ArduinoJson/src"
 }
