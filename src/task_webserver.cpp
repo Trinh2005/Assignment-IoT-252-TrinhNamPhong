@@ -71,4 +71,8 @@ void Webserver_reconnect()
         connnectWSV();
     }
     ElegantOTA.loop();
+<<<<<<< Updated upstream
+=======
+    ws.cleanupClients(); // Prevent WS memory leak from stale clients
+>>>>>>> Stashed changes
 }

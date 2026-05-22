@@ -8,6 +8,7 @@ void startAP()
     Serial.println(WiFi.softAPIP());
 }
 
+<<<<<<< Updated upstream
 void startSTA()
 {
     if (WIFI_SSID.isEmpty())
@@ -43,4 +44,13 @@ bool Wifi_reconnect()
     }
     startSTA();
     return false;
+=======
+bool Wifi_reconnect() {
+  const wl_status_t status = WiFi.status();
+  if (status == WL_CONNECTED) {
+    return true;
+  }
+  startSTA();
+  return false;
+>>>>>>> Stashed changes
 }
